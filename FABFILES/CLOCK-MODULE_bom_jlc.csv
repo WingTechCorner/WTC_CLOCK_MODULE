@@ -1,0 +1,5 @@
+"Comment","Designator","Footprint","LCSC Part #"
+"Conn_01x04","J1","PinHeader_1x04_P2.54mm_Horizontal","no_part_number"
+"22","R1,R2","R_0603_1608Metric_Pad0.98x0.95mm_HandSolder","C23345"
+"SN74LVC1T45DBV","U1","SOT-23-6","no_part_number"
+"CXO_DIP8","X1","Oscillator_DIP-8","C7843"

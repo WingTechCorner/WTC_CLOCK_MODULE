@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/wingtangwong/Documents/KICAD/PROJECTS/CLOCK-MODULE/CLOCK-MODULE.sch</source>
+    <date>Friday, 10 September 2021 at 16:16:17</date>
+    <tool>Eeschema (5.1.9-0-10_14)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>CLOCK-MODULE.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="X1">
+      <value>CXO_DIP8</value>
+      <footprint>Oscillator:Oscillator_DIP-8</footprint>
+      <datasheet>http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf</datasheet>
+      <fields>
+        <field name="JLCPCB">C7843</field>
+      </fields>
+      <libsource lib="Oscillator" part="CXO_DIP8" description="Crystal Clock Oscillator, DIP8-style metal package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613BE4A1</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>SN74LVC1T45DBV</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf</datasheet>
+      <libsource lib="Logic_LevelTranslator" part="SN74LVC1T45DBV" description="Single-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, SOT-23-6"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613BEF8A</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>22</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C23345</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613BD220</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>22</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="JLCPCB">C23345</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613BD565</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x04</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613BF278</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Logic_LevelTranslator" part="SN74LVC1T45DBV">
+      <description>Single-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, SOT-23-6</description>
+      <docs>http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC1T45DBV</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCCA" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="A" type="BiDi"/>
+        <pin num="4" name="B" type="BiDi"/>
+        <pin num="5" name="DIR" type="input"/>
+        <pin num="6" name="VCCB" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Oscillator" part="CXO_DIP8">
+      <aliases>
+        <alias>TFT660</alias>
+      </aliases>
+      <description>Crystal Clock Oscillator, DIP8-style metal package</description>
+      <docs>http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf</docs>
+      <footprints>
+        <fp>Oscillator*DIP*8*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">CXO_DIP8</field>
+        <field name="Footprint">Oscillator:Oscillator_DIP-8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="OUT" type="output"/>
+        <pin num="8" name="Vcc" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>/Library/Application Support/kicad/5.19/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/5.19/library/Device.lib</uri>
+    </library>
+    <library logical="Logic_LevelTranslator">
+      <uri>/Library/Application Support/kicad/5.19/library/Logic_LevelTranslator.lib</uri>
+    </library>
+    <library logical="Oscillator">
+      <uri>/Library/Application Support/kicad/5.19/library/Oscillator.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/CLK-TO-LS">
+      <node ref="X1" pin="5"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="2" name="/CLK_OUT">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="3" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="4" name="/3V3">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="5" name="/OSC-EN">
+      <node ref="X1" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="6" name="/5V">
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="7" name="/GND">
+      <node ref="U1" pin="2"/>
+      <node ref="X1" pin="4"/>
+    </net>
+    <net code="8" name="/5V">
+      <node ref="U1" pin="1"/>
+      <node ref="X1" pin="8"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="9" name="/GND">
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="10" name="/CLK_OUT">
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="11" name="/3V3">
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="12" name="/5V">
+      <node ref="J1" pin="4"/>
+    </net>
+  </nets>
+</export>
