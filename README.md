@@ -1,5 +1,9 @@
 # WTC_CLOCK_MODULE
 
+![SMD Side of Clock Module](IMAGES/CLOCK-MODULE-SMD_SIDE.png)
+![OSC CAN Side of Clock Module](IMAGES/CLOCK-MODULE-OSC_SIDE.png)
+
+
 This is my "Clock Module" design to make use of a DIP-8 4-pin OSC.
 
 This OSC employs CMOS tech so operates at 5V. However, most modern IC(s) tend to favor 3v3 or lower.
