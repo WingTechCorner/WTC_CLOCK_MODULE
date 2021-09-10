@@ -12,9 +12,9 @@ sending these off to the PCBA service, I can just remove the current limiting re
 
 The assumption regarding the pinout of the OSC:
 
-| pin   | purpose/hookup                                     |
-|:-----: | :---------------                                    |
-| 1     | Enable/Disable (current limit resistor tied to 5V) |
-| 4     | GND                                                |
-| 5     | Clock Output                                       |
-| 8     | VCC (5V)                                           |
+| Pin     | Function                                           |
+| :-----: | :---------------                                   |
+| 1       | Enable/Disable (current limit resistor tied to 5V) |
+| 4       | GND                                                |
+| 5       | Clock Output                                       |
+| 8       | VCC (5V)                                           |
